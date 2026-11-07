@@ -120,15 +120,13 @@ This copies only code, tests, and synthetic references; it does not load the loc
 
 ## Your data
 
-For native installations, the SQLite database and saved files live in `data/`, excluded from version control along with `.env`, caches, build output, and dependencies. Back up the database and referenced files together; see [backend/README.md](backend/README.md) for verified backup/restore commands and API details. The link override adds migration 004 for immutable approval metadata; existing migration files and historical content remain unchanged.
+For native installations, the SQLite database and saved files live in `data/`, excluded from version control along with `.env`, caches, build output, and dependencies. Stop Jab before copying the complete `data/` directory for backup. Back up the database and referenced files together.
 
 ## Preserving linked text
 
 Restart Jab after updating, then open **Base résumé → Re-import original with links** to recover destinations from an already saved original. This creates a separate draft; compare it with the prior reviewed version, carry across any later manual edits, review any unresolved links, then activate it explicitly. Existing runs and submitted PDFs are unchanged.
 
-Contact links now have separate labels and destinations. For text within a heading, bullet, summary, skill or letter paragraph, select the phrase and choose **Link selected text**. If editing changes a linked phrase, its destination stays visible for reattachment instead of being silently discarded. Valid retained links appear blue and clickable in generated PDFs. The existing override keeps invalid values as non-clickable text. See [HYPERLINK-PRESERVATION-PLAN.md](HYPERLINK-PRESERVATION-PLAN.md) for implementation and verification details.
-
-Document workspace behavior, selection persistence, and migration 007 are documented in [DOCUMENT-WORKSPACE.md](DOCUMENT-WORKSPACE.md).
+Contact links have separate labels and destinations. For text within a heading, bullet, summary, skill or letter paragraph, select the phrase and choose **Link selected text**. If editing changes a linked phrase, its destination stays visible for reattachment instead of being silently discarded. Valid retained links appear blue and clickable in generated PDFs. The existing override keeps invalid values as non-clickable text.
 
 ## Repository privacy
 

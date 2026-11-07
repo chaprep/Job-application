@@ -23,3 +23,18 @@ frontend/dist/
 output/
 .playwright-cli/
 frontend/.test/
+
+# Local planning and implementation notes are not part of the published app.
+/APPLICATION-TRACKING-WORKFLOW.md
+/BASE-RESUME-WORKFLOW.md
+/DATABASE.md
+/DOCUMENT-GENERATION-WORKFLOW.md
+/DOCUMENT-WORKSPACE.md
+/HYPERLINK-PRESERVATION-PLAN.md
+/JOB-INTAKE-WORKFLOW.md
+/OPEN-QUESTIONS.md
+/PLAN.md
+/REVIEW-DOWNLOAD-WORKFLOW.md
+/backend/README.md
+/backend/prompts/README.md
+/reference/README.md
