@@ -1,0 +1,48 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[left=58bp,right=58bp,top=54bp,bottom=54bp]{geometry}
+\usepackage{fontspec}
+\setmainfont{Roboto}[Path=@FONT_PATH@/,Extension=.otf,UprightFont=Roboto-Regular,BoldFont=Roboto-Bold,Ligatures=NoCommon]
+\usepackage{xcolor,seqsplit}
+\definecolor{accent}{HTML}{0F6B70}
+\definecolor{dategray}{HTML}{666666}
+\usepackage[unicode,colorlinks=true,urlcolor=black,linkcolor=black]{hyperref}
+\hypersetup{pdftitle={@NAME@ | Cover Letter},pdfauthor={@NAME@}}
+\pagestyle{empty}
+\setlength{\topskip}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\newcommand{\covername}[1]{{\fontsize{24}{28}\selectfont\bfseries #1\par}}
+\newcommand{\coverrole}[1]{{\fontsize{16}{20}\selectfont\bfseries\color{accent} #1\par}}
+\newsavebox{\sidebar}
+\newsavebox{\letterbody}
+\begin{document}
+\fontsize{11}{14}\selectfont
+\begin{lrbox}{\sidebar}
+\begin{minipage}[t]{142bp}
+\raggedright
+\vspace{0pt}
+@SIDEBAR@
+\end{minipage}
+\end{lrbox}
+\begin{lrbox}{\letterbody}
+\begin{minipage}[t]{316bp}
+\raggedright
+\vspace{0pt}
+\hrule height 2bp
+\vspace{4bp}
+@MAIN@
+\end{minipage}
+\end{lrbox}
+% Boxed columns cannot paginate; reject tall content instead of hiding it.
+\ifdim\dimexpr\ht\sidebar+\dp\sidebar\relax>\textheight
+\typeout{Overfull \vbox: cover letter sidebar exceeds page height}
+\fi
+\ifdim\dimexpr\ht\letterbody+\dp\letterbody\relax>\textheight
+\typeout{Overfull \vbox: cover letter body exceeds page height}
+\fi
+\noindent\usebox{\sidebar}\hspace{38bp}\usebox{\letterbody}
+\end{document}

@@ -1,0 +1,17 @@
+name: jab
+services:
+  jab:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      JAB_DATABASE: /app/data/jab.sqlite3
+    volumes:
+      - jab-data:/app/data
+    init: true
+    stop_grace_period: 30s
+volumes:
+  jab-data:

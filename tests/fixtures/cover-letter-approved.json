@@ -1,0 +1,56 @@
+{
+  "content": {
+    "schema_version": "2",
+    "unresolved_links": [],
+    "contact": {
+      "name": "Test Candidate",
+      "email": "test@example.com",
+      "phone": "",
+      "location": "Bengaluru",
+      "links": [
+        {
+          "id": "legacy_contact_0",
+          "label": "https://example.com",
+          "url": "https://example.com",
+          "source_link_id": null
+        }
+      ]
+    },
+    "letter_date": "2026-11-07",
+    "salutation": "Dear Example hiring team,",
+    "paragraphs": [
+      {
+        "id": "p0",
+        "text": "I build tools that help teams save time and serve clients well. My work brings clear goals and sound code to each stage of a project. I test each change with the team and use their views to shape the next step. I build tools that help teams save time and serve clients well. My work brings clear goals and sound code to each stage of a project. I test each change with the team",
+        "links": [],
+        "emphasis": []
+      },
+      {
+        "id": "p1",
+        "text": "and use their views to shape the next step. I build tools that help teams save time and serve clients well. My work brings clear goals and sound code to each stage of a project. I test each change with the team and use their views to shape the next step. I build tools that help teams save time and serve clients well. My work brings clear goals and sound code to each stage of",
+        "links": [],
+        "emphasis": []
+      },
+      {
+        "id": "p2",
+        "text": "a project. I test each change with the team and use their views to shape the next step. I build tools that help teams save time and serve clients well. My work brings clear goals and sound code to each stage of a project. I test each change with the team and use their views to shape the next step. I build tools that help teams save time and serve clients well. My work brings",
+        "links": [],
+        "emphasis": []
+      },
+      {
+        "id": "p3",
+        "text": "clear goals and sound code to each stage of a project. I test each change with the team and use their views to shape the next step. I build tools that help teams save time and serve clients well. My work brings clear goals and sound code to each stage of a project. I test each change with the team and use their views to shape the next step. I build tools that help teams",
+        "links": [],
+        "emphasis": []
+      }
+    ],
+    "closing": "Kind regards,",
+    "signature": "Test Candidate"
+  },
+  "job": {
+    "title": "Software Engineer",
+    "company": "Example Company",
+    "location": "Remote"
+  },
+  "original_right_raster_sha256": "64a0cf10bbf584cca04c8e7b8c022ee079cdd1c945c7acc27374ce21fa0e56f9"
+}

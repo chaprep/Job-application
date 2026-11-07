@@ -1,0 +1,25 @@
+data/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.sqlite*
+*.db
+backups/
+jab-backup*/
+.DS_Store
+# Superseded local reference scripts contain personal source material.
+reference/original-build-resume.py
+reference/original-check-pdf.swift
+
+.venv/
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+output/
+.playwright-cli/
+frontend/.test/
